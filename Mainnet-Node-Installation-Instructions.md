@@ -5,7 +5,7 @@ Ports used by the node
  - 8888 REST endpoint for status and metrics (having this accessible allows your node to be part of network status)
  - 9999 SSE endpoint for event stream.
 
-If these 35000 is the only port required to be open for your node to function, however, opening 8888 will allow others to know general network health.
+Of these 35000 is the only port required to be open for your node to function, however, opening 8888 will allow others to know general network health.
 
 ## OS Requirements
 Recommended OS version is Ubuntu 18.04 or 20.04.
