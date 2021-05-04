@@ -44,8 +44,8 @@ sudo apt install -y jq
 This block is one command.  Copy the entire block to execute
 ```
 while read protocol_version; do \
-sudo -u casper /etc/casper/pull_casper-node_version.sh casper.conf $protocol_version; \
-sudo -u /etc/casper/config_from_example.sh $protocol_version; \
+sudo -u casper /etc/casper/pull_casper_node_version.sh casper.conf $protocol_version; \
+sudo -u casper /etc/casper/config_from_example.sh $protocol_version; \
 done < <(curl -sf genesis.casperlabs.io/casper/protocol_versions)
 ```
 
