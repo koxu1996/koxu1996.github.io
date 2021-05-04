@@ -64,9 +64,11 @@ sudo sed -i "/trusted_hash =/c\trusted_hash = '$(casper-client get-block --node-
 ```
 
 ## Start the node
+```
 sudo logrotate -f /etc/logrotate.d/casper-node
 sudo systemctl start casper-node-launcher; sleep 2
 systemctl status casper-node-launcher
+```
 
 ## Monitor the node syncing
 ```
