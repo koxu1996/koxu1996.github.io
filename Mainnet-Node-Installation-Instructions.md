@@ -32,7 +32,7 @@ sudo apt-key add casper-repo-pubkey.asc
 sudo apt update
 ```
 
-## Install casper-node-launcher, casper-client, and jq (JQuery)
+## Install casper-node-launcher, casper-client, and jq
 ```
 sudo apt install -y casper-client
 sudo apt install -y casper-node-launcher
