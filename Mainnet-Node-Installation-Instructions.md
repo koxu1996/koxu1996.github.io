@@ -87,4 +87,4 @@ Apr 17 22:20:57 joe-test.casperlabs.io systemd[1]: Started Casper Node Launcher.
 
 Get a monitoring tool in place.  The community has a created a few tools such as:
 - Status.py: https://github.com/RapidMark/casper-tools
-- https://github.com/matsuro-hadouken/casper-tools
+- Grafana: https://github.com/matsuro-hadouken/casper-tools
