@@ -1,3 +1,6 @@
 Welcome to the casper-node wiki!
 
-Instructions for setting up a node on Mainnet
+The Casper Node is the first node client of the Casper Network.  The documentation is still coming on line, please feel free to file issues against docs if you find a problem. 
+
+
+- [Setting up a node on Mainnet](https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions)
