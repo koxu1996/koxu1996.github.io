@@ -3,10 +3,10 @@ Bonding
 =======
 
 It is recommended that a bonding request be sent once the node has completed the synchronization process. Bonding in Casper takes
-place through the auction contract via the ``add_bid.wasm`` contract. The auction runs for a future era, every era. The Chainspec specifies the number of slots available, and the auction will take the top N slots and create the validator set for the future era.
-In the testnet, era durations are approx. 30 minutes. The entire process takes approximately 3 eras. Therefore, the time for bid submission to inclusion in the validator set is a minimum of 90 minutes.\ :raw-html-m2r:`<br>`
-Bonding requests (bids) are transactions like any other. 
-Because they are generic transactions, they are more resistant to censorship.
+place through the auction contract via the ``add_bid.wasm`` contract. The auction runs for a future era, every era. There are 100 slots available, and the auction will take the top 100 bids and create the validator set for the future era.
+
+Eras are approximately 2 hours long. The auction runs every era and selects the validator set for the era after the next, and runs at the end of each era. Therefore, the time for bid submission to inclusion in the validator set is a minimum of 2 hours.
+Bonding requests (bids) are transactions like any other. Because they are generic transactions, they are more resistant to censorship.
 
 Security and Bonding
 --------------------
@@ -29,7 +29,7 @@ Build Add_Bid Contract
 
 Because bonding transactions are generic transactions, it's necessary to build the contract that submits a bid.
 Clone the casper-node repository and build the contracts.
-To build contracts, set up Rust & install all dependencies. Visit 'Setting up Rust' in the Developer Guide.
+To build contracts, set up Rust & install all dependencies.
 
 Build the contracts in release mode.
 
@@ -40,7 +40,7 @@ Build the contracts in release mode.
 
 Obtain the Casper Client
 ---------------------------
-In this document, we will use the Rust Casper client to transfer tokens. You can find the client on `crates.io <https://crates.io/crates/casper-client>`_. 
+In this document, we will use the Rust Casper client to send the bonding request. You can find the client on `crates.io <https://crates.io/crates/casper-client>`_. or you can obtain it by following these steps..
 
 Run the commands below to install the Casper client on most flavors of Linux and macOS. You will need the nightly version of the compiler. 
 
