@@ -1,9 +1,12 @@
 # Introduction and Timing
 We are requesting that all Casper Mainnet participants stage the upgrade of their nodes to a new version of `casper_node` immediately, using the instructions below. _Staging an upgrade_ is a process in which you tell your node to download the upgrade files and prepare them so that they can automatically be applied at the pre-defined activation point.
 
-For this upgrade to `casper-node v1.2.0`, the activation point is `Era 695`, which will be approximately around:
+For this upgrade to `casper-node v1.2.0`, the activation point is `Era 694`, which will be approximately around:
 
-* To be announced
+* 2021-05-28 12:43:45+00:00 UTC    
+* 2021-05-28 05:43:45-07:00 PDT    
+* 2021-05-28 08:43:45-04:00 EDT    
+* 2021-05-28 14:43:45+02:00 CET
 
 In order to not have points deducted for your Mainnet reward score, you have to make sure you have properly staged the upgrade well ahead of the activation point so that your node will be upgraded on time.
 
@@ -23,7 +26,7 @@ You should expect this output if properly staged, prior to upgrading:
 
     $ curl -s http://127.0.0.1:8888/status | jq .next_upgrade
     {
-     "activation_point": 695,
+     "activation_point": 694,
      "protocol_version": "1.2.0"
     }
 
