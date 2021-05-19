@@ -19,7 +19,7 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 
 2. Download and execute the upgrade:
 
-    `curl -ssf genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh | sudo bash -`
+    `curl -sSf genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh | sudo bash -`
 
 # Verifying Successful Staging
 After you have successfully executed the above commands, wait a few minutes for a new block to be issued before checking that your node is correctly staged with the upgrade. After a few minutes, take a look at your status end-point, as follows:
