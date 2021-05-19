@@ -13,11 +13,11 @@ In order to not have points deducted for your Mainnet reward score, you have to 
 # Upgrade Staging Instructions
 The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands.
 
-**View the script before running the upgrade:**
+1. Before running the upgrade, view the script with this command:
 
 `curl -s genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh`
 
-**Download and execute the upgrade:**
+2. Download and execute the upgrade:
 
 `curl -sSf genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh | sudo bash -`
 
