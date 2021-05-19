@@ -3,7 +3,7 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 For this upgrade to `casper-node v1.2.0`, the activation point is `Era 490`, which will be approximately around:
 
-* To be announced...
+* To be announced
 
 In order to not have points deducted for your Mainnet reward score, you have to make sure you have properly staged the upgrade well ahead of the activation point so that your node will be upgraded on time.
 
