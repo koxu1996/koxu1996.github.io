@@ -15,11 +15,11 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 `sudo -u casper /etc/casper/config_from_example.sh 1_2_0`
 
 # Verifying Successful Staging
-After you have successfully executed the above commands, you can verify that your node is correctly staged with the upgrade by taking a look at your status end-point, as follows:
+After you have successfully executed the above commands, wait a few minutes for a new block to be issued before checking that your node is correctly staged with the upgrade. After a few minutes, take a look at your status end-point, as follows:
 
 `curl -s http://127.0.0.1:8888/status | jq .next_upgrade`
 
-This is the output you should expect if properly staged, prior to upgrading:
+You should expect this output if properly staged, prior to upgrading:
 
     $ curl -s http://127.0.0.1:8888/status | jq .next_upgrade
     {
