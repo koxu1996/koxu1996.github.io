@@ -3,17 +3,14 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 For this upgrade to `casper-node v1.2.0`, the activation point is `Era 490`, which will be approximately around:
 
-* Wednesday May 19, 2021 at 16:32 UTC
-* Wednesday May 19, 2021 at 18:32 CET
-* Wednesday May 19, 2021 at 12:32 EDT
-* Wednesday May 19, 2021 at 09:32 PDT
+* To be announced...
 
 In order to not have points deducted for your Mainnet reward score, you have to make sure you have properly staged the upgrade well ahead of the activation point so that your node will be upgraded on time.
 
 # Upgrade Staging Instructions
 The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands, one by one:
 
-`sudo -u casper /etc/casper/pull_casper_node_version.sh casper-test.conf 1_2_0`
+`sudo -u casper /etc/casper/pull_casper_node_version.sh casper.conf 1_2_0`
 
 `sudo -u casper /etc/casper/config_from_example.sh 1_2_0`
 
