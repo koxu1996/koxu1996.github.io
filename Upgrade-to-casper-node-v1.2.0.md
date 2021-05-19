@@ -11,11 +11,13 @@ For this upgrade to `casper-node v1.2.0`, the activation point is `Era 694`, whi
 In order to not have points deducted for your Mainnet reward score, you have to make sure you have properly staged the upgrade well ahead of the activation point so that your node will be upgraded on time.
 
 # Upgrade Staging Instructions
-The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands, one by one:
+The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands.
 
-`sudo -u casper /etc/casper/pull_casper_node_version.sh casper.conf 1_2_0`
+**View the script before running the upgrade:**
+`curl -s genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh`
 
-`sudo -u casper /etc/casper/config_from_example.sh 1_2_0`
+**Download and execute the upgrade:**
+`curl -sSf genesis.casperlabs.io/casper/1_2_0/stage_upgrade.sh | sudo bash -`
 
 # Verifying Successful Staging
 After you have successfully executed the above commands, wait a few minutes for a new block to be issued before checking that your node is correctly staged with the upgrade. After a few minutes, take a look at your status end-point, as follows:
