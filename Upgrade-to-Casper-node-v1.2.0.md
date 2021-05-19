@@ -1,3 +1,7 @@
+# Preliminary
+
+We do not expect to stage the MainNet upgrade for 1.2.0 until May 24th.  These instructions are preliminary and will continue to be updated closer to that time.
+
 # Introduction and Timing
 We are requesting that all Casper Mainnet participants stage the upgrade of their nodes to a new version of `casper_node` immediately, using the instructions below. _Staging an upgrade_ is a process in which you tell your node to download the upgrade files and prepare them so that they can automatically be applied at the pre-defined activation point.
 
