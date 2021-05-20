@@ -36,10 +36,10 @@ Next, you need to re-build the smart contracts required for [bonding](https://do
 1. Re-build the contracts required for bonding
 
 ```
-    cd casper-node
-    git checkout master
-    make setup-rs
-    make build-client-contracts 
+cd casper-node
+git checkout master
+make setup-rs
+make build-client-contracts 
 ```
 
 # Activate Bid
