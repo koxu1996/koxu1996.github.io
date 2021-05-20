@@ -27,6 +27,21 @@ To check your node is in sync, compare the current block height at [https://cspr
 
 `curl -s localhost:8888/status | jq .last_added_block_info`
 
+# Re-build Contracts for Bonding
+
+Next, you need to re-build the smart contracts required for [bonding](https://docs.casperlabs.io/en/latest/node-operator/bonding.html) by following these steps:
+
+1. Navigate to the `casper-node` directory 
+1. Check out the `master` branch
+1. Re-build the contracts required for bonding
+
+```
+    cd casper-node
+    git checkout master
+    make setup-rs
+    make build-client-contracts 
+```
+
 # Activate Bid
 
 With your node in sync and ready to validate again, we need to activate your invalid bid.  We do that with the activate_bid.wasm contract.  This will be part of the normal contracts compile.
