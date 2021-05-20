@@ -14,7 +14,7 @@ The full auction information is returned with `casper-client get-auction-info`. 
 
 Replace <public_key> below with your public_key.
 
-`casper-client get-auction-info | jq '.result.auction_state.bids[] | select( .bid.delegators[0].public_key == "<public_key")'`
+`casper-client get-auction-info | jq '.result.auction_state.bids[] | select( .public_key == "<public_key>")'`
 
 This will return your bid and show an `"inactive"` field.  If this is true, you are ejected.
 # Correcting your node issue
