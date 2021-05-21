@@ -69,7 +69,7 @@ We are hard at work developing a UI-based way to stake your CSPR tokens. While t
 
 ## Generate keys
 
-If you do not have a pair of keys already generated, you can create them. 
+If you do not have a pair of keys already generated, you can create them. Create new keys to transfer to and from exchanges with. Keep a copy of your keys in a safe place! 
 
 **IMPORTANT:** whatever path you save your keys to, you will need to edit further commands that reference the correct path.
 
@@ -86,7 +86,7 @@ The below command is set to delegate 555 CSPR to the indicated validator:
 
     casper-client put-deploy \
         --chain-name casper \
-        --node-address http://3.14.161.135:7777 \
+        --node-address http://<MAINNET_PEER_IP>:7777 \
         --secret-key /path/to/secret_key.pem \
         --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/delegate.wasm" \
         --payment-amount 3000000000 \
@@ -111,7 +111,7 @@ After deploying the smart contract, you will receive output from the casper-clie
 While your tokens are staked with a validator, your rewards are automatically re-added to the delegation, increasing the amount you will receive in rewards for future blocks. You can confirm your total tokens staked with a validator by entering:
 
 
-    casper-client get-auction-info --node-address http://3.14.161.135:7777 | jq -r '.result.auction_state.bids[] | select( .public_key == "$VALIDATOR_PUBLIC_KEY") | .bid.delegators[] | select( .public_key == "$PUBLIC_KEY_HEX") | .staked_amount | tonumber / 1000000000'
+    casper-client get-auction-info --node-address http://<MAINNET_PEER_IP>:7777 | jq -r '.result.auction_state.bids[] | select( .public_key == "$VALIDATOR_PUBLIC_KEY") | .bid.delegators[] | select( .public_key == "$PUBLIC_KEY_HEX") | .staked_amount | tonumber / 1000000000'
 
 Which will return a human readable amount of CSPR (testnet example):
 
@@ -124,7 +124,7 @@ Which will return a human readable amount of CSPR (testnet example):
 In order to undelegate tokens when able, the smart contract syntax is similar to the delegate contract. To undelegate 100 CSPR from your Validator, enter:
 
     casper-client put-deploy --chain-name casper \
-    --node-address http://3.14.161.135:7777/ \
+    --node-address http://<MAINNET_PEER_IP>:7777/ \
     --secret-key "/path/to//secret_key.pem" \
     --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/undelegate.wasm" \
     --payment-amount 1000000000 \
@@ -142,6 +142,12 @@ Once deployed, the network will return a deploy hash:
         "deploy_hash": "f569fa6a1de134758f76533e34a082761d74dff45813f6aed106d2f9813935ff"
       }
     }
+
+# Send tokens to another wallet (like an exchange)
+
+Transfer 5 CSPR:
+
+    casper-client transfer --node-address http://<MAINNET_PEER_IP>:7777 --amount 5000000000 --target-account {destination Public Key Hex} --payment-amount 10000 --secret-key /path/to/secret_key.pem --chain-name casper --id 1 | jq -r
 
 
 # Closing Notes
