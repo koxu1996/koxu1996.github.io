@@ -125,7 +125,7 @@ In order to undelegate tokens when able, the smart contract syntax is similar to
 
     casper-client put-deploy --chain-name casper \
     --node-address http://3.14.161.135:7777/ \
-    --secret-key "$HOME/keys/devxdao/secret_key.pem" \
+    --secret-key "/path/to//secret_key.pem" \
     --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/undelegate.wasm" \
     --payment-amount 1000000000 \
     --session-arg="validator:public_key='$VALIDATOR_PUBLIC_KEY'" \
