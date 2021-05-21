@@ -6,7 +6,7 @@ When your validating node does not participate in consensus for a length of time
 
 For example, if we are in Era 100 and your node is invalid, your node will marked for ejection to be removed at the start of Era 102. This is due to the bonding delay of 1 Era.
 
-If you were a previous validator and still exist on the Validators Auction tab on this page [https://cspr.live/validatiors](https://cspr.live/validatiors), but not in Validators, you may have been ejected or out bid. 
+If you were a previous validator and still exist on the Validators Auction tab on this page [https://cspr.live/validators](https://cspr.live/validators), but not in Validators, you may have been ejected or out bid. 
 
 # Detecting Ejection (casper-client)
 
