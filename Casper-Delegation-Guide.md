@@ -105,7 +105,31 @@ After deploying the smart contract, you will receive output from the casper-clie
         }
     }
 
+Confirm the delegate deploy was successful after a few minutes:
 
+    casper-client get-deploy <DEPLOY_HASH_HERE> | jq .result.execution_results
+
+which will return the json body of the deploy's execution results:
+
+    [
+      {
+        "block_hash": "1f73378fead588baa14462695fb255106f80ffeeb7838b0742856fa4a699c32d",
+        "result": {
+          "Success": {
+            "cost": "2949625600",
+            "effect": {
+              "operations": [
+                ...
+               ]
+            "transforms": [
+                 ...
+               ]
+            "transfers": [
+                 ...
+               ]
+        }
+    ]
+            
 # Checking your staked amount with a validator
 
 While your tokens are staked with a validator, your rewards are automatically re-added to the delegation, increasing the amount you will receive in rewards for future blocks. You can confirm your total tokens staked with a validator by entering:
@@ -142,6 +166,31 @@ Once deployed, the network will return a deploy hash:
         "deploy_hash": "f569fa6a1de134758f76533e34a082761d74dff45813f6aed106d2f9813935ff"
       }
     }
+
+Confirm the undelegate deploy was successful after a few minutes:
+
+    casper-client get-deploy <UNDEPLOY_HASH_HERE> | jq .result.execution_results
+
+which will return the json body of the deploy's execution results:
+
+    [
+      {
+        "block_hash": "1f73378fead588baa14462695fb255106f80ffeeb7838b0742856fa4a699c32d",
+        "result": {
+          "Success": {
+            "cost": "2949625600",
+            "effect": {
+              "operations": [
+                ...
+               ]
+            "transforms": [
+                 ...
+               ]
+            "transfers": [
+                 ...
+               ]
+        }
+    ]
 
 # Send tokens to another wallet (like an exchange)
 
