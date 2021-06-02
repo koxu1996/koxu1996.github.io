@@ -7,3 +7,5 @@ This is only for default ed25519 keys.
 `{ echo -n 01; openssl pkey -outform DER -pubout -in "secret_key.pem" | tail -c +13 | openssl base64 | openssl base64 -d | hexdump -ve '/1 "%02x" ' | tr -d "/n"; } > generated_public_key_hex`
 
 
+Note: you can also generate a key without the casper-client using this:
+`openssl genpkey -algorithm Ed25519 -out secret_key.pem`
