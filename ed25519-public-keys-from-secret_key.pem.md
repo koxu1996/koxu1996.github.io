@@ -8,4 +8,5 @@ This is only for default ed25519 keys.
 
 
 Note: you can also generate a key without the casper-client using this:
+
 `openssl genpkey -algorithm Ed25519 -out secret_key.pem`
