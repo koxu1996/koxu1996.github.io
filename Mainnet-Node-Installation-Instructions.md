@@ -53,9 +53,7 @@ done < <(curl -sf genesis.casperlabs.io/casper/protocol_versions)
 
 If you do not have keys, you can create them
 ```
-cd /etc/casper/validator_keys
-sudo -u casper casper-client keygen
-
+sudo -u casper casper-client keygen /etc/casper/validator_keys
 ```
 
 ## Get a trusted hash
