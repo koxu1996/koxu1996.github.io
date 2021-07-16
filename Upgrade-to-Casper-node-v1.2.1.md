@@ -1,6 +1,14 @@
 # Introduction and Timing
 We are requesting that all Casper Mainnet participants stage the upgrade of their nodes to a new version of `casper_node` immediately, using the instructions below. _Staging an upgrade_ is a process in which you tell your node to download the upgrade files and prepare them so that they can automatically be applied at the pre-defined activation point.
 
+## Reason for the Patch
+A vulnerability was discovered that a uRef need not be part of the named keys of an account when transferring tokens to an account from a purse.  Only a single exploit was carried out by the reporter of the issue. 
+
+The transaction is: https://cspr.live/deploy/1728d7defa1185805b8812bc986cf2c40e654c343b0e2a3f3f9e55f4b74cc193. 
+
+To verify that no other exploits have taken place, look for transactions where the same `fromAccount` and different `sourcePurse`s are used.
+
+
 For this upgrade to protocol version 1.2.1, the activation point is `Era 1281`, which will be approximately around:
 
 * 2021-07-16 12:28:21+00:00 Z
