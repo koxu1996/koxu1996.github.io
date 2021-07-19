@@ -16,6 +16,10 @@ Replace <public_key> below with your public_key.
 
 `casper-client get-auction-info | jq '.result.auction_state.bids[] | select( .public_key == "<public_key>")'`
 
+If running on a normally setup node, this will automatically put in your public_key:
+
+`casper-client get-auction-info | jq '.result.auction_state.bids[] | select( .public_key == "$(cat /etc/casper/validator_keys/public_key_hex)")'`
+
 This will return your bid and show an `"inactive"` field.  If this is true, you are ejected.
 # Correcting your node issue
 
@@ -49,7 +53,7 @@ With your node in sync and ready to validate again, we need to activate your inv
 Run the following transaction to re-activate your bid and re-join the network. You will require a balance of at least 0.3 CSPR for this contract.
 
 ```
-casper-client put-deploy --secret-key /etc/casper/validator_keys/secret_key.pem --chain-name casper-test --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/activate_bid.wasm" --payment-amount 300000000 --session-arg "validator_public_key:public_key='$(cat /etc/casper/validator_keys/public_key_hex)'"
+casper-client put-deploy --secret-key /etc/casper/validator_keys/secret_key.pem --chain-name casper --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/activate_bid.wasm" --payment-amount 300000000 --session-arg "validator_public_key:public_key='$(cat /etc/casper/validator_keys/public_key_hex)'"
 ```
 
 Check that the deploy was successful with the `casper-client get-deploy <deploy_hash>` or by searching for the deploy_hash on [https://cspr.live/](https://cspr.live/).
