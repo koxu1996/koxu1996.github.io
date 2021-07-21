@@ -26,3 +26,6 @@ You should expect this output if properly staged, prior to upgrading:
      "protocol_version": "1.3.0"
     }
 If you see another value here, for example, `null`, then your upgrade staging was not executed successfully.
+
+# Additional Information
+For additional information about the release refer to - [link]
