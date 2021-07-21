@@ -1,6 +1,6 @@
 # Introduction and Timing
 We are requesting that all Casper Mainnet participants stage the upgrade of their nodes to a new version of `casper_node` immediately, using the instructions below. _Staging an upgrade_ is a process in which you tell your node to download the upgrade files and prepare them so that they can automatically be applied at the pre-defined activation point.
-For this upgrade to `casper-node v1.2.0`, the activation point is `Era TBD`, which will be approximately around:
+For this upgrade to `casper-node v1.3.0`, the activation point is `Era TBD`, which will be approximately around:
 *TO BE ANNOUNCED
 * 2021-08-xx 12:43:45+00:00 UTC    
 * 2021-08-xx 05:43:45-07:00 PDT    
