@@ -1,29 +1,32 @@
-# What is Delegation?
+# What is delegation?
 
-Instead of having to operate and maintain a casper node (server that stores a copy of the blockchain), you can instead delegate your tokens to someone on the network who has indicated they intend to operate a server on the network. These server operators are called Validators, and they keep a certain percentage of rewards generated from your staked tokens, similar to a commission. 
+Instead of having to operate and maintain a Casper node (the server that stores a copy of the blockchain), you can instead delegate your tokens to someone on the network who has indicated they intend to operate a server on the network. These server operators are called Validators, and they keep a certain percentage of rewards generated from your staked tokens, similar to a commission. 
 
-Validators set their own fee, as well as earn rewards for their own staked tokens. By participating in the protocol this way, you help to improve decentralization and security of the network, and earn rewards in return. Each block in the chain is proposed by a validator, and a validator is given reward tokens for proposing the block, and rewards for any delegations are also paid out.
+Validators set their own fee, as well as earn rewards for their own staked tokens. By participating in the protocol this way, you help to improve the decentralization and security of the network and earn rewards in return. Each block in the chain is proposed by a validator, and a validator is given reward tokens for proposing the block, and rewards for any delegations are also paid out.
 
-# How do I choose a validator to delegate to?
+# How do I choose a validator to delegate my tokens?
 
 You have complete control over who you delegate your CSPR to. To get to know who is an active member of the community and works to support their validating node with high availability, join our official [discord server](https://discord.com/invite/Q38s3Vh). Validators (identified with the @Validator role, and a red tint to their display names) often post in the various channels and are usually active community members.
 
-You can also view the official casper blockchain explorer, [Cspr.live Validator Page](https://cspr.live/validators) to select any validator from the list to delegate your tokens to.
+You can also view the official Casper blockchain explorer, [cspr.live validator page](https://cspr.live/validators) to select any validator from the list to delegate your tokens to.
 
 The validator page will show a validator's public key, total staked CSPR, and percent of weight of the total staked amount on the network. Clicking on a validator in the list will open the details of that Validator. The Validator details page will show the following information:
-  - Public Key
+  * Public Key
   * Commission Rate
-  + Self Stake
+  * Self Stake
   * Total Stake
 
 As well as second section that can show you either blocks proposed by that validator, or delegations received by that validator (public key of delegator and amount delegated).
 
+# Delegating with cspr.live
 
-# Delegating, the command-line way
+Here you will find a step-by-step, user-friendly tutorial on how to delegate your tokens: https://casper.network/network/blog/how-to-stake-your-cspr.
 
-We are hard at work developing a UI-based way to stake your CSPR tokens. While this is in development, the current method for delegating tokens on the network is accomplished via the command-line. Casper-client is currently tested and compatible with Ubuntu 18.04 or 20.04. To delegate your tokens on the network, follow the base casper install instructions here:
+# Delegating with the command-line
 
-## Install Casper-client
+We are hard at work developing a UI-based way to stake your CSPR tokens. While this is in development, the current method for delegating tokens on the network is accomplished via the command-line. Casper-client is currently tested and compatible with Ubuntu 18.04 or 20.04. To delegate your tokens on the network, follow the base Casper install instructions here:
+
+## Install the Casper client
 
     echo "deb https://repo.casperlabs.io/releases" bionic main | sudo tee -a /etc/apt/sources.list.d/casper.list
     curl -O https://repo.casperlabs.io/casper-repo-pubkey.asc
@@ -32,7 +35,7 @@ We are hard at work developing a UI-based way to stake your CSPR tokens. While t
     sudo apt install casper-client -y
     sudo apt install jq -y
 
-## Install pre-requisites for building smart contracts:
+## Install the pre-requisites for building smart contracts
 
     cd ~
     sudo apt purge --auto-remove cmake
@@ -57,7 +60,7 @@ We are hard at work developing a UI-based way to stake your CSPR tokens. While t
         && sudo cmake --install "wabt-${BRANCH}/build" --prefix /usr --strip -v \
         && rm -rf "wabt-${BRANCH}"
 
-## Compile Smart Contracts:
+## Compile the Smart Contracts
 
     cd ~
 
@@ -67,18 +70,18 @@ We are hard at work developing a UI-based way to stake your CSPR tokens. While t
     make setup-rs
     make build-client-contracts -j
 
-## Generate keys
+## Generate the keys for your wallet
 
-If you do not have a pair of keys already generated, you can create them. Create new keys to transfer to and from exchanges with. Keep a copy of your keys in a safe place! 
+If you do not have a pair of keys already generated, you can create them. Create new keys to transfer your tokens to and from exchanges. Keep a copy of your keys in a safe place! 
 
-**IMPORTANT:** whatever path you save your keys to, you will need to edit further commands that reference the correct path.
+**IMPORTANT:** Note the path where you save your keys. Other commands in this tutorial will use this path and you will need to edit them to reference the correct path.
 
     casper-client keygen /path/to/your/key/storage
     PUBLIC_KEY_HEX=$(cat /path/to/your/key/storage/public_key_hex)
 
-## Start Delegating
+## Start delegating
 
-Once you have set up your smart contracts, installed the casper-client, and chosen a Validator on the network to whom you wish to delegate, you can send a deployment to a node on the network with an open RPC endpoint. The delegate smart contract requires just under 3 CSPR in gas, noted by the "payment-amount" command-line argument.
+Once you have set up your smart contracts, installed the casper-client, and chosen a validator on the network to whom you wish to delegate, you can send a deployment to a node on the network with an open RPC endpoint. The delegate smart contract requires just under 3 CSPR in gas, noted by the "payment-amount" command-line argument.
 
 The below command is set to delegate 555 CSPR to the indicated validator:
 
@@ -109,7 +112,7 @@ Confirm the delegate deploy was successful after a few minutes:
 
     casper-client get-deploy <DEPLOY_HASH_HERE> | jq .result.execution_results
 
-which will return the json body of the deploy's execution results:
+which will return the JSON body of the deploy's execution results:
 
     [
       {
@@ -171,7 +174,7 @@ Confirm the undelegate deploy was successful after a few minutes:
 
     casper-client get-deploy <UNDEPLOY_HASH_HERE> | jq .result.execution_results
 
-which will return the json body of the deploy's execution results:
+which will return the JSON body of the deploy's execution results:
 
     [
       {
@@ -199,6 +202,6 @@ Transfer 5 CSPR:
     casper-client transfer --node-address http://<MAINNET_PEER_IP>:7777 --amount 5000000000 --target-account {destination Public Key Hex} --payment-amount 10000 --secret-key /path/to/secret_key.pem --chain-name casper --id 1 | jq -r
 
 
-# Closing Notes
+# Closing notes
 
 Your delegation will start to earn rewards beginning in the next era (under 2 hours). You can check your staked amount as the network moves on to see how many CSPR tokens have been earned. 
