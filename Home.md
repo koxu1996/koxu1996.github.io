@@ -2,8 +2,17 @@ Welcome to the Casper Network wiki!
 
 The Casper Node is the first node client of the Casper Network. The documentation is still coming online; please feel free to file issues against docs if you find a problem.
 
+# All audiences
+- [Casper How-To Guides](https://docs.cspr.community/)
+- [Casper delegation guide](https://github.com/casper-network/casper-node/wiki/Casper-Delegation-Guide)
+- [How to generate a public key from your secret_key.pem file](https://github.com/casper-network/casper-node/wiki/ed25519-public-keys-from-secret_key.pem)
 
+# Node operators
+- [Upgrade to Casper node v1.2.1](https://github.com/casper-network/casper-node/wiki/Upgrade-to-Casper-node-v1.2.1)
 - [Setting up a node on Mainnet](https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions)
-- [Bonding as a Validator](https://github.com/casper-network/casper-node/wiki/Bonding-as-a-Validator)
-- [Recovering from Validator Ejection](https://github.com/casper-network/casper-node/wiki/Recover-from-Validator-Ejection)
-- [Casper Delegation Guide](https://github.com/casper-network/casper-node/wiki/Casper-Delegation-Guide)
+- [Bonding as a validator](https://github.com/casper-network/casper-node/wiki/Bonding-as-a-Validator)
+- [Recovering from validator ejection](https://github.com/casper-network/casper-node/wiki/Recover-from-Validator-Ejection)
+- [Setup a non-root user for a node](https://github.com/casper-network/casper-node/wiki/Setup-non-root-user-for-node)
+
+# DApp Developers
+- [Important links](https://github.com/casper-network/casper-node/wiki/Important-Links-for-Developers)
