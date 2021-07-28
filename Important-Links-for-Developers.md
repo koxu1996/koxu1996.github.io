@@ -1,7 +1,6 @@
 The following links are essential for dApp development on the Casper Network.
 
-* [Central documentation repository](https://docs.casperlabs.io/en/latest/ )
-> * [Introductory tutorials with hands-on activities](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/index.html) 
+* [Central documentation repository](https://docs.casperlabs.io/en/latest/ ) with [introductory tutorials with hands-on activities](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/index.html) 
 
 * [Casper RPC API](http://casper-rpc-docs.s3-website-us-east-1.amazonaws.com/)	
 
