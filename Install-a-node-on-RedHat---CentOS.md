@@ -12,7 +12,7 @@ Install the Rust toolchain (from https://www.rust-lang.org/tools/install)
 
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
-As indicated after install, check your cargo environment:
+As indicated after install, load your cargo environment:
 
 `source $HOME/.cargo/env`
 
