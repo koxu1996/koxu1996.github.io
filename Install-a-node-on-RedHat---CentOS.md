@@ -4,11 +4,11 @@ Install the pre-requisite tools.
 
 `sudo yum install gcc cmake git pkg-config make openssl-devel gcc-c++`
 
-Ensure the cmake version is higher than 3.4. Check https://www.rust-lang.org/tools/install.
+Ensure the cmake version is higher than 3.4.
 
 `cmake --version`
 
-Install the Rust toolchain.
+Install the Rust toolchain (from https://www.rust-lang.org/tools/install)
 
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
