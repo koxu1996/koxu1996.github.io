@@ -2,7 +2,9 @@ The following links are essential for dApp development on the Casper Network.
 
 * [Central documentation repository](https://docs.casperlabs.io/en/latest/ )
 > * [Introductory tutorials with hands-on activities](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/index.html) 
-	
+
+* [Casper RPC API](http://casper-rpc-docs.s3-website-us-east-1.amazonaws.com/)	
+
 * [The Casper course](https://www.youtube.com/watch?v=C01rDnBmTsE&list=PL8oWxbJ-csEogSV-M0IPiofWP5I_dLji6&index=1 )
 
 * Central repository with smart contract examples:
