@@ -32,6 +32,7 @@ The following links are essential for dApp development on the Casper Network.
 > * https://docs.rs/casper-client/latest/casper_client
 > * https://docs.rs/casper-contract/latest/casper_contract
 > * https://www.npmjs.com/package/casper-contract
+> * https://www.npmjs.com/package/casper-js-sdk
 
 * Casper crates 
 > * https://crates.io/crates/cargo-casper 
