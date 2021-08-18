@@ -27,10 +27,10 @@ The following links are essential for dApp development on the Casper Network.
 > * Python SDK 
 
 * API documentation 
-> * https://docs.rs/casper-node/latest/casper_node/ 
-> * https://docs.rs/casper-types/latest/casper_types/ 
-> * https://docs.rs/casper-client/latest/casper_client/ 
-> * https://docs.rs/casper-contract/latest/casper_contract/ 
+> * https://docs.rs/casper-node/latest/casper_node
+> * https://docs.rs/casper-types/latest/casper_types
+> * https://docs.rs/casper-client/latest/casper_client
+> * https://docs.rs/casper-contract/latest/casper_contract
 
 * Casper crates 
 > * https://crates.io/crates/cargo-casper 
