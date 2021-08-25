@@ -6,6 +6,9 @@ The Casper Node is the first node client of the Casper Network. The documentatio
 - https://casper.network/en/network
 - https://casperlabs.io/
 - https://www.devxdao.com/
+- Twitter: https://twitter.com/Casper_Network
+- Discord: https://discord.com/invite/Q38s3Vh
+- Telegram: https://t.me/casperblockchain
 
 Staking tutorials:
 > - [Staking video tutorial](https://www.youtube.com/watch?v=4C7L5lS284c)
