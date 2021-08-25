@@ -3,9 +3,9 @@ Welcome to the Casper Network wiki!
 The Casper Node is the first node client of the Casper Network. The documentation is still coming online; please feel free to file issues against docs if you find a problem.
 
 # All audiences
-- https://casper.network/en/network
-- https://casperlabs.io/
-- https://www.devxdao.com/
+- Casper Network: https://casper.network/en/network
+- CasperLabs: https://casperlabs.io/
+- Grants: https://www.devxdao.com/
 - Twitter: https://twitter.com/Casper_Network
 - Discord: https://discord.com/invite/Q38s3Vh
 - Telegram: https://t.me/casperblockchain
