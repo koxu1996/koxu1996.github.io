@@ -3,6 +3,10 @@ Welcome to the Casper Network wiki!
 The Casper Node is the first node client of the Casper Network. The documentation is still coming online; please feel free to file issues against docs if you find a problem.
 
 # All audiences
+- https://casper.network/en/network
+- https://casperlabs.io/
+- https://www.devxdao.com/
+
 Staking tutorials:
 > - [Staking video tutorial](https://www.youtube.com/watch?v=4C7L5lS284c)
 > - [Staking written tutorial](https://casper.network/network/blog/how-to-stake-your-cspr)
