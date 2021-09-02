@@ -6,7 +6,7 @@
 
 **Technology access:**
 * Mainnet [here](https://cspr.live/) and Testnet [here](https://testnet.cspr.live/), with the possibility of setting up a private network
-* Details on NFT standard here and sample implementation [here](https://github.com/casper-ecosystem/casper-nft-cep47)
+* Details on NFT standard [here](https://github.com/casper-network/ceps/pull/47/files) and sample implementation [here](https://github.com/casper-ecosystem/casper-nft-cep47)
 * Full github [here](https://github.com/casper-network)
 * Node operator guide [here](https://docs.casperlabs.io/en/latest/node-operator/index.html) and more on the [Casper Network Wiki](https://github.com/casper-network/casper-node/wiki)
 * ERC20 smart contract example [here](https://github.com/casper-ecosystem/erc20) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
