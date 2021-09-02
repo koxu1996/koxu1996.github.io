@@ -1,7 +1,7 @@
 **Materials:**
 * Why Casper tech [here](https://docs.casperlabs.io/en/latest/)
 * Highway paper [here](https://arxiv.org/abs/2101.02159)
-* Results from Trail of Bits audit [here](https://github.com/trailofbits/publications/blob/master/reviews/CasperLabsHighwayProtocol.pdf.)
+* Results from Trail of Bits audit [here](https://github.com/trailofbits/publications/blob/master/reviews/CasperLabsHighwayProtocol.pdf)
 * Energy usage report [here](https://blog.casperlabs.io/new-power-usage-report-shows-the-casper-networks-impressive-energy-efficiency-relative-to-other-blockchain-protocols/)
 
 **Technology access:**
