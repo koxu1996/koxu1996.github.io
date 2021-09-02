@@ -11,7 +11,7 @@
 * Node operator guide [here](https://docs.casperlabs.io/en/latest/node-operator/index.html) and more on the [Casper Network Wiki](https://github.com/casper-network/casper-node/wiki)
 * ERC20 smart contract example [here](https://github.com/casper-ecosystem/erc20) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
 * Two-party multi-sig smart contract example [here](https://github.com/casper-ecosystem/two-party-multi-sig) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
-* Smart contract upgrade example [here](https://github.com/casper-ecosystem/contract-upgrade-example)
+* Smart contract upgrade example [here](https://github.com/casper-ecosystem/contract-upgrade-example) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/upgrade-tutorial.html)
 * Clients: 
 > * [Rust](https://github.com/casper-network/casper-node/tree/master/client)
 > * [JS/TS](https://github.com/casper-ecosystem/casper-client-sdk)
