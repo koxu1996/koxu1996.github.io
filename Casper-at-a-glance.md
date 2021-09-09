@@ -20,7 +20,7 @@
 * Energy usage [report](https://blog.casperlabs.io/new-power-usage-report-shows-the-casper-networks-impressive-energy-efficiency-relative-to-other-blockchain-protocols/)
 * Evolving [documentation](https://caspernetwork.readthedocs.io/en/latest/) and translations
 
-**Quick links:**
+**Quick onboarding:**
 
 * [Set up your IDE](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/setup-of-rust-contract-sdk.html) - Launch your development environment to begin building on Casper
 * [Create smart contracts](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/writing-contracts/index.html) - Write, deploy, and query your smart contracts in your IDE, or on a local, private, or public blockchain
