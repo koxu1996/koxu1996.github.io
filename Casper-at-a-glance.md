@@ -1,17 +1,17 @@
 **Materials:**
-* Why Casper tech [here](https://docs.casperlabs.io/en/latest/)
+* Why Casper tech [here](https://caspernetwork.readthedocs.io/en/latest/)
 * Highway paper [here](https://arxiv.org/abs/2101.02159)
 * Results from Trail of Bits audit [here](https://github.com/trailofbits/publications/blob/master/reviews/CasperLabsHighwayProtocol.pdf)
 * Energy usage report [here](https://blog.casperlabs.io/new-power-usage-report-shows-the-casper-networks-impressive-energy-efficiency-relative-to-other-blockchain-protocols/)
 
 **Technology access:**
-* Mainnet [here](https://cspr.live/) and Testnet [here](https://testnet.cspr.live/), with the possibility of setting up a private network
+* Mainnet [here](https://cspr.live/) and Testnet [here](https://testnet.cspr.live/), with other possibilities of setting up a local, private, or public network
 * Details on NFT standard [here](https://github.com/casper-network/ceps/pull/47/files) and sample implementation [here](https://github.com/casper-ecosystem/casper-nft-cep47)
-* Full github [here](https://github.com/casper-network)
+* Full Github [here](https://github.com/casper-network)
 * Node operator guide [here](https://docs.casperlabs.io/en/latest/node-operator/index.html) and more on the [Casper Network Wiki](https://github.com/casper-network/casper-node/wiki)
-* ERC20 smart contract example [here](https://github.com/casper-ecosystem/erc20) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
-* Two-party multi-sig smart contract example [here](https://github.com/casper-ecosystem/two-party-multi-sig) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
-* Smart contract upgrade example [here](https://github.com/casper-ecosystem/contract-upgrade-example) and tutorial [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/upgrade-tutorial.html)
+* ERC20 smart contract example [here](https://github.com/casper-ecosystem/erc20) and tutorial [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
+* Two-party multi-sig smart contract example [here](https://github.com/casper-ecosystem/two-party-multi-sig) and tutorial [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
+* Smart contract upgrade example [here](https://github.com/casper-ecosystem/contract-upgrade-example) and tutorial [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/upgrade-tutorial.html)
 * Clients: 
 > * [Rust](https://github.com/casper-network/casper-node/tree/master/client)
 > * [JS/TS](https://github.com/casper-ecosystem/casper-client-sdk)
@@ -25,7 +25,7 @@
 
 **Tutorial and training:**
 * Casper course [here](https://www.youtube.com/watch?v=C01rDnBmTsE&list=PL8oWxbJ-csEogSV-M0IPiofWP5I_dLji6)
-> * Module 1 write-up [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/setup-of-rust-contract-sdk.html) 
-> * Module 2 write-up [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/setup-nctl.html)
-> * Module 3 write-up [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
-> * Module 4 write-up [here](https://docs.casperlabs.io/en/latest/dapp-dev-guide/tutorials/counter/index.html)
+> * Module 1 write-up [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/setup-of-rust-contract-sdk.html) 
+> * Module 2 write-up [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/setup-nctl.html)
+> * Module 3 write-up [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
+> * Module 4 write-up [here](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/counter/index.html)
