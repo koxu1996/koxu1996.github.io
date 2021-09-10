@@ -33,7 +33,5 @@ The following links are essential for dApp development on the Casper Network.
    * https://crates.io/crates/casper-contract  
    * https://crates.io/crates/casper-types  
    * https://crates.io/crates/casper-node 
-
 * Technical assets for Casper node integration 
-
-> * https://github.com/casper-network/casper-integrations 
+   *https://github.com/casper-network/casper-integrations 
