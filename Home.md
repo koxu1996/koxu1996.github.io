@@ -24,6 +24,7 @@ Staking tutorials:
 - [Bonding as a validator](https://github.com/casper-network/casper-node/wiki/Bonding-as-a-Validator)
 - [Recovering from validator ejection](https://github.com/casper-network/casper-node/wiki/Recover-from-Validator-Ejection)
 - [Setup a non-root user for a node](https://github.com/casper-network/casper-node/wiki/Setup-non-root-user-for-node)
+- [FAQs for operators](https://github.com/casper-network/casper-node/wiki/Node-operators-FAQs/)
 
 # DApp Developers
 - [Important links](https://github.com/casper-network/casper-node/wiki/Important-Links-for-Developers)
