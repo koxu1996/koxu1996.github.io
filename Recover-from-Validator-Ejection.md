@@ -18,7 +18,7 @@ Replace <public_key> below with your public_key.
 
 If running on a normally setup node, this will automatically put in your public_key:
 
-`casper-client get-auction-info | jq '.result.auction_state.bids[] | select( .public_key == "$(cat /etc/casper/validator_keys/public_key_hex)")'`
+`casper-client get-auction-info | jq --arg pk "$(cat /etc/casper/validator_keys/public_key_hex)" '.result.auction_state.bids[] | select( .public_key | ascii_downcase == $pk | ascii_downcase)'`
 
 This will return your bid and show an `"inactive"` field.  If this is true, you are ejected.
 # Correcting your node issue
