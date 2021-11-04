@@ -21,6 +21,9 @@ If running on a normally setup node, this will automatically put in your public_
 `casper-client get-auction-info | jq --arg pk "$(cat /etc/casper/validator_keys/public_key_hex)" '.result.auction_state.bids[] | select( .public_key | ascii_downcase == $pk | ascii_downcase)'`
 
 This will return your bid and show an `"inactive"` field.  If this is true, you are ejected.
+
+If you receive a `parse error: Invalid numeric literal at`, try running `casper-client get-auction-info` by itself.  The reason for this is usually that your RPC port is not up yet.  Get your node in sync and RPC will come up.  This should be working before you try to recover.
+
 # Correcting your node issue
 
 Before fixing the ejection, you need to correct whatever problem caused your node to be ejected.
