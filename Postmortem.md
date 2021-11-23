@@ -1,3 +1,34 @@
+# Mainnet outage 2021-11-22 17:40 UTC
+
+Mainnet experienced a performance issue due to high CPU usage in a cryptographic subroutine of the consensus process, triggered by an equivocation of a validator. This performance issue, caused by the _Limited Naiveté Criterion_ checks, began to take an unsustainable amount of CPU time shortly after and ultimately resulted in a network stall.
+
+As nodes were overloaded by cryptographic calculations, they lacked resources to process other critical consensus messages and entered a state where they ran progressively slower, until the process of creating new blocks stalled. While other functions of the node remained mostly unaffected, due to degraded performance they ranged from slow to intermittently unresponsive.
+
+
+## What was the fix?
+
+We deactivated the Limited Naiveté Criterion checks; these will be reevaluated for their usefulness.
+
+
+## How was the fix deployed?
+
+A patched node version of the 1.4.1 release was prepared and a gradual rollout via validators was effected over seven hours. As soon as a quorum of nodes by stake had deployed the new release, consensus resumed and the blockchain moved forward again.
+
+## Outcome
+
+No blocks or transacted data was lost.
+
+The network itself was unable to process new deploys from the start of the outage at block 332,816 (2021-11-22, 17:40).
+
+Blocks 332,817 to 332,835 inclusive were finalized into the chain around 03:00 on 2021-11-23 as the network approached a quorum of patched nodes.
+
+Mainnet resumed normal operations at block 332,836 (2021-11-23, 03:14) for a total outage of 9hrs 34mins.
+
+Deploys that were submitted, but not included in blocks before the outage may need to be resubmitted.  This will require any such deploy to be recreated and signed in order to update the deploy's creation timestamp. Please check transaction statuses and ensure transactions have been proccessed.
+
+#
+
+
 # Mainnet outage 2021-11-03 13:45 UTC
 
 Mainnet went down during the upgrade from 1.3.4 to 1.4.1, due to the following chain of events:
