@@ -9,4 +9,4 @@ Users of the Casper network must upgrade to the following versions of software, 
 *  Casper-erc20-js-client  - 0.0.3 or above.
 *  Casper-js-client-helper  - 0.0.3 or above.
 
-If you have upgraded the relevant software please provide your approval as a comment 
+If the user has upgraded the relevant software please provide your approval as a comment(here).
