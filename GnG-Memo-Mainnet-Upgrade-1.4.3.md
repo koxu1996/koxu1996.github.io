@@ -6,7 +6,7 @@ Users(Exchanges, Dapp Developers et al) of the Casper network must upgrade to th
 ### Call for action: upgrade
 *  JS SDK 2.7.1 or above.
 *  Casper-Signer 1.4.4 or above.
-*  Casper-cep47-js-client  - 0.5.3 or above.
+*  Casper-cep47-js-client  - 0.5.4 or above.
 *  Casper-erc20-js-client  - 0.0.3 or above.
 *  Casper-js-client-helper  - 0.0.3 or above.
 
