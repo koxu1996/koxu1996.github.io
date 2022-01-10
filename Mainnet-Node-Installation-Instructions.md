@@ -8,7 +8,11 @@ Ports used by the node
 Of these 35000 is the only port required to be open for your node to function, however, opening 8888 will allow others to know general network health.
 
 ## OS Requirements
-Recommended OS version is Ubuntu 18.04 or 20.04.
+Recommended OS version is Ubuntu 18.04 or 20.04 (recommended).
+
+## Number of open files
+
+Please read through [this page on nofiles configuration](https://github.com/casper-network/casper-node/wiki/Increasing-default-nofile-HARD-limit-for-a-node) to put settings in `/etc/security/limits.conf` for your node to assure proper operation.
 
 ## Clean up
 
