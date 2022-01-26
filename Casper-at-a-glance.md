@@ -12,9 +12,7 @@
 * Create unique digital assets with tokens or NFTs
   * An NFT [example implementation](https://github.com/casper-ecosystem/casper-nft-cep47)
   * The [NFT standard](https://github.com/casper-network/ceps/pull/47/files)
-  * The [ERC-20 standard](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
-  * Wisekey [use case](https://casperlabs.io/blog/wisekey-casperlabs-to-build-nft-marketplace-on-casper) 
-  * Metacask [use case](https://blog.casperlabs.io/metacask-and-casperlabs-partner-to-develop-a-nft-marketplace-for-rare-whiskeyy/)
+  * The [ERC-20 standard on Casper](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/erc20/index.html)
 * [Upgrade your contracts](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/upgrade-tutorial.html) - Add new features to your existing smart contracts to keep up with evolving business requirements
   * Smart contract upgrade [example](https://github.com/casper-ecosystem/contract-upgrade-example)
 * Energy usage [report](https://blog.casperlabs.io/new-power-usage-report-shows-the-casper-networks-impressive-energy-efficiency-relative-to-other-blockchain-protocols/)
