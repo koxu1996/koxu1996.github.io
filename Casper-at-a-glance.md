@@ -8,7 +8,7 @@
   * Two-party multi-sig smart contract [example](https://github.com/casper-ecosystem/two-party-multi-sig)
   * Multi-signature [tutorial](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
 * Enterprise-grade software
-  * Read the [case studies](https://casperlabs.io/casper-case-studies)
+  * Read the [case studies](https://casperlabs.io/casper-case-studies) to explore partnerships, solutions, audits, and more
 * Create unique digital assets with tokens or NFTs
   * An NFT [example implementation](https://github.com/casper-ecosystem/casper-nft-cep47)
   * The [NFT standard](https://github.com/casper-network/ceps/pull/47/files)
@@ -24,7 +24,6 @@
 * [Create smart contracts](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/writing-contracts/index.html) - Write, deploy, and query your smart contracts in your IDE, or on a local, private, or public blockchain
 * [Explore the tutorials](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/index.html) - Implement advanced account management, tokens, upgrades, and more with step-by-step guides
 * [Watch the video course](https://www.youtube.com/watch?v=C01rDnBmTsE&list=PL8oWxbJ-csEogSV-M0IPiofWP5I_dLji6) - Deploy a counter contract on the chain with the Casper 101 video course
-* [Read the case studies](https://casperlabs.io/casper-case-studies) - Explore partnerships, solutions, audits, and more
 * [Integrate with Casper](https://github.com/casper-network/casper-integrations) - Interact with a Casper node using API documentation & example code
 
 **Technology:**
