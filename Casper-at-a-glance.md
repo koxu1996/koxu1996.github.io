@@ -7,8 +7,6 @@
   * [Account design](https://caspernetwork.readthedocs.io/en/latest/implementation/accounts.html)
   * Two-party multi-sig smart contract [example](https://github.com/casper-ecosystem/two-party-multi-sig)
   * Multi-signature [tutorial](https://caspernetwork.readthedocs.io/en/latest/dapp-dev-guide/tutorials/multi-sig/index.html)
-* Enterprise-grade software
-  * Read the [case studies](https://casperlabs.io/casper-case-studies) to explore partnerships, solutions, audits, and more
 * Create unique digital assets with tokens or NFTs
   * An NFT [example implementation](https://github.com/casper-ecosystem/casper-nft-cep47)
   * The [NFT standard](https://github.com/casper-network/ceps/pull/47/files)
