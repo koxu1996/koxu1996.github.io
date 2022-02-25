@@ -39,12 +39,12 @@ To check your node is in sync, compare the current block height at [https://cspr
 Next, you need to re-build the smart contracts required for [bonding](https://docs.casperlabs.io/en/latest/node-operator/bonding.html) by following these steps:
 
 1. Navigate to the `casper-node` directory 
-1. Check out the `master` branch
+1. Check out the current default release branch
 1. Re-build the contracts required for bonding
 
 ```
 cd casper-node
-git checkout master
+git checkout <replace with current default branch>
 make setup-rs
 make build-client-contracts 
 ```
