@@ -5,6 +5,7 @@ The Casper Node is the first node client of the Casper Network. The documentatio
 # All audiences
 - Casper Network: https://casper.network/en/network
 - CasperLabs: https://casperlabs.io/
+- Community guides maintained by Make: https://docs.cspr.community/
 - Grants: https://www.devxdao.com/
 - Twitter: https://twitter.com/Casper_Network
 - Discord: https://discord.com/invite/Q38s3Vh
@@ -13,8 +14,6 @@ The Casper Node is the first node client of the Casper Network. The documentatio
 Staking tutorials:
 - [Staking video tutorial](https://www.youtube.com/watch?v=4C7L5lS284c)
 - [Staking written tutorial](https://casper.network/network/blog/how-to-stake-your-cspr)
-- [Casper How-To Guides](https://docs.cspr.community/), including:
-   - [Ledger setup guide](https://docs.casperlabs.io/en/latest/workflow/ledger-setup.html)
 - [How to generate a public key from your secret_key.pem file](https://github.com/casper-network/casper-node/wiki/ed25519-public-keys-from-secret_key.pem)
 
 # Node operators
