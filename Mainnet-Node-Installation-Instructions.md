@@ -38,9 +38,7 @@ sudo apt update
 
 ## Install casper-node-launcher, casper-client, and jq
 ```
-sudo apt install -y casper-client
-sudo apt install -y casper-node-launcher
-sudo apt install -y jq
+sudo apt install -y casper-client casper-node-launcher jq
 ```
 
 ## Install all protocols 
