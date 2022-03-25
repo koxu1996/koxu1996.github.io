@@ -54,7 +54,7 @@ If you see `null` after waiting for a few minutes, then your upgrade staging was
 
 ## OpenSSL security update
 
-OpenSSL bug that was patched has the possibility of affecting nodes.  This has been communicated on various channels previously and you may have updated it already.
+An OpenSSL bug was patched that has the possibility of affecting nodes.  This has been communicated on various channels previously and you may have updated it already.
 
 To verify the version, run:
 
