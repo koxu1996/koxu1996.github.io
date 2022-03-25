@@ -25,7 +25,9 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 
     `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_5/stage_upgrade.sh | sudo bash -`
 
-# Note:  The install script will modify your current running config in `/etc/casper/1_4_4/config.toml`.  
+## 1.4.4 config change
+
+The install script will modify your current running config in `/etc/casper/1_4_4/config.toml`.  
 
 This section of the script is increasing the value for max_global_state_size.  There is a small chance that we will exceed the configured space prior to the 1.4.5 upgrade point.  If so, this will allow your node to continue properly after your node automatically restarts.
 
