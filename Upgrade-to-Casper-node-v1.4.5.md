@@ -3,7 +3,7 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
-# Make sure to see security information at the bottom after staging.
+**Make sure to see security information at the bottom after staging.**
 
 ## 1.4.5 Release
 This includes some security fixes and code will be made public following activation.
