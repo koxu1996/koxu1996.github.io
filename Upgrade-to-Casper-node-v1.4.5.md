@@ -3,27 +3,34 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
-## 1.4.4 Release
-Information about this release can get found here: https://github.com/casper-network/casper-node/releases/tag/v1.4.4
+## 1.4.5 Release
+This includes some security fixes and code will be made public following activation.
 
-For this upgrade to protocol version 1.4.4, the activation point is `Era 3435`, which will be approximately around:
+For this upgrade to protocol version 1.4.5, the activation point is `Era 4417`, which will be approximately around:
 
- * 2022-01-12 15:18 UTC
- * 2022-01-12 07:18 US/PACIFIC
- * 2022-01-12 10:18 US/EASTERN
- * 2022-01-12 16:18 EUROPE/ZURICH
- * 2022-01-12 23:18 ASIA/HONG_KONG
+ * 2022-04-04 13:45 UTC
+ * 2022-04-04 06:45 US/PACIFIC
+ * 2022-04-04 09:45 US/EASTERN
+ * 2022-04-04 15:45 EUROPE/ZURICH
+ * 2022-04-04 21:45 ASIA/HONG_KONG
 
 # Upgrade Staging Instructions
 The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands.
 
 1. Before running the upgrade, view the script with this command (optional):
 
-    `curl -s genesis.casperlabs.io/casper/1_4_4/stage_upgrade.sh`
+    `curl -s genesis.casperlabs.io/casper/1_4_5/stage_upgrade.sh`
 
 2. Download and execute the upgrade:
 
-    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_4/stage_upgrade.sh | sudo bash -`
+    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_5/stage_upgrade.sh | sudo bash -`
+
+# Note:  The install script will modify your current running config in `/etc/casper/1_4_4/config.toml`.  
+
+This section of the script is increasing the value for max_global_state_size.  There is a small chance that we will exceed the configured space prior to the 1.4.5 upgrade point.  If so, this will allow your node to continue properly after your node automatically restarts.
+
+    # bump max global state for protocol 1_4_4:
+    sudo sed -i "/max_global_state_size =/c\max_global_state_size = 1_539_316_281_344" /etc/casper/1_4_4/config.toml
 
 # Verifying Successful Staging
 
@@ -35,9 +42,10 @@ You should expect this output if properly staged, prior to upgrading:
 
     $ curl -s localhost:8888/status | jq .next_upgrade
     {
-      "activation_point": 3435,
-      "protocol_version": "1.4.4"
+      "activation_point": 4417,
+      "protocol_version": "1.4.5"
     }
+
 
 
 If you see `null` after waiting for a few minutes, then your upgrade staging was not executed successfully.
