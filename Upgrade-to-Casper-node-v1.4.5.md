@@ -3,6 +3,8 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
+# Make sure to see security information at the bottom after staging.
+
 ## 1.4.5 Release
 This includes some security fixes and code will be made public following activation.
 
@@ -48,6 +50,20 @@ You should expect this output if properly staged, prior to upgrading:
       "protocol_version": "1.4.5"
     }
 
-
-
 If you see `null` after waiting for a few minutes, then your upgrade staging was not executed successfully.
+
+## OpenSSL security update
+
+OpenSSL bug that was patched has the possibility of affecting nodes.  This has been communicated on various channels previously and you may have updated it already.
+
+To verify the version, run:
+
+    sudo apt show openssl
+
+If you see older versions than 1.1.1f-1ubuntu2.12 (20.04) or 1.1.1-1ubuntu2.1~18.04.15 (18.04), you should upgrade with:
+
+    sudo apt update
+    sudo apt install openssl
+
+This will NOT restart your node.  The new version of OpenSSL will only be picked up with a restart.  You can wait for 1.4.5 to activate or manually restart your node to use the update OpenSSL immediately.
+
