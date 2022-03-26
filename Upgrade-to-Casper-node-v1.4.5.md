@@ -16,6 +16,17 @@ For this upgrade to protocol version 1.4.5, the activation point is `Era 4417`, 
  * 2022-04-04 15:45 EUROPE/ZURICH
  * 2022-04-04 21:45 ASIA/HONG_KONG
 
+## 1.4.4 config change 
+
+The install script will modify your current running config in `/etc/casper/1_4_4/config.toml`.  
+
+This section of the script is increasing the value for max_global_state_size.  There is a small chance that we will exceed the configured space prior to the 1.4.5 upgrade point.  If so, this will allow your node to continue properly after your node automatically restarts.
+
+    # bump max global state for protocol 1_4_4:
+    sudo sed -i "/max_global_state_size =/c\max_global_state_size = 1_539_316_281_344" /etc/casper/1_4_4/config.toml
+
+There is no need to run the above line, as it is included in the script below. This is just to be clear about the additional functionality our install script is doing.
+
 # Upgrade Staging Instructions
 The process to upgrade your node is very straightforward. Log in to your node, and execute the following two commands.
 
@@ -26,15 +37,6 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 2. Download and execute the upgrade:
 
     `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_5/stage_upgrade.sh | sudo bash -`
-
-## 1.4.4 config change
-
-The install script will modify your current running config in `/etc/casper/1_4_4/config.toml`.  
-
-This section of the script is increasing the value for max_global_state_size.  There is a small chance that we will exceed the configured space prior to the 1.4.5 upgrade point.  If so, this will allow your node to continue properly after your node automatically restarts.
-
-    # bump max global state for protocol 1_4_4:
-    sudo sed -i "/max_global_state_size =/c\max_global_state_size = 1_539_316_281_344" /etc/casper/1_4_4/config.toml
 
 # Verifying Successful Staging
 
