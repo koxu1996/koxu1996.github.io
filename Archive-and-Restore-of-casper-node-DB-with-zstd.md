@@ -44,17 +44,12 @@ The `-[level]` argument is level of compression from 1 to 19 (with some 20-22 wi
 
 Some examples for MainNet DB compression at block 741160:
 
-|---------|-----------------|---------|
 | Level   | Time (min:sec)  | Size    |
 |---------|-----------------|---------|
 | 12      | 29:20           | 15.8 GB |
-|---------|-----------------|---------|
 | 15      | 46:15           | 13.0 GB |
-|---------|-----------------|---------|
 | 17      | 87:42           | 13.0 GB |
-|---------|-----------------|---------|
 | 19      | 197:08          | 12.9 GB |
-|---------|-----------------|---------|
 
 For local backups, using 1-5 might be a great speed of compression to size trade-off.  
 
