@@ -105,3 +105,5 @@ This will stream a bunch of binary to your terminal.  If we pipe that into the p
 ```
 curl -s --output - <tar.zst URL> | zstd -d --long=31 | sudo -u casper tar xv
 ```
+
+Which will decompress the files from `curl` directly into the local directory.
