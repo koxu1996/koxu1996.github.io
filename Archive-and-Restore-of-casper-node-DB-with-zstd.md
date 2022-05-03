@@ -1,3 +1,5 @@
+Note: Values presented in this document assume that the `trie-compact` tool was run on MainNet DB to shrink.  This will be rolled out on or after the release of 1.4.6.
+
 # Summary
 
 After testing a few methods of compressing and decompressing the current LMDB-based DB system used by casper-node, the best method in both compression speed and space is using [Zstd](http://facebook.github.io/zstd/).  
