@@ -42,7 +42,7 @@ tar -b 4096 -cv --sparse . | zstd -[level] -cv -T[thread count] --long=31 > [pat
 
 ## Compression level 
 
-The `-[level]` argument is level of compression from 1 to 19 (with some 20-22 with expansion.)   In testing, we are finding 15 to be the sweet spot in time of compression vs size.  If you are creating an archive to be downloaded by many, then the extra time for higher compression may be useful.  If you are creating an archive for you to transfer once and use, then lower compression makes sense.
+The `-[level]` argument is level of compression from 1 to 19 (and 20-22 with expansion.)   In testing, we are finding 15 to be the sweet spot in time of compression vs size.  If you are creating an archive to be downloaded by many, then the extra time for higher compression may be useful.  If you are creating an archive for you to transfer once and use, then lower compression makes sense.
 
 Some examples for MainNet DB compression at block 741160:
 
