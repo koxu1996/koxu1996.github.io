@@ -17,7 +17,7 @@ Staking tutorials:
 - [How to generate a public key from your secret_key.pem file](https://github.com/casper-network/casper-node/wiki/ed25519-public-keys-from-secret_key.pem)
 
 # Node operators
-- [Upgrade to Casper node v1.4.5](https://github.com/casper-network/casper-node/wiki/Upgrade-to-Casper-node-v1.4.5)
+- [Upgrade to Casper node v1.4.6](https://github.com/casper-network/casper-node/wiki/Upgrade-to-Casper-node-v1.4.6)
 - [Setting up a node on Mainnet using Ubuntu](https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions)
 - [Setting up a node using RedHat CentOS](https://github.com/casper-network/casper-node/wiki/Install-a-node-on-RedHat---CentOS)
 - [Bonding as a validator](https://github.com/casper-network/casper-node/wiki/Bonding-as-a-Validator)
