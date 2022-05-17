@@ -3,8 +3,6 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
-**Make sure to see security information at the bottom after staging.**
-
 ## 1.4.6 Release
 This includes Scratch Trie optimization which should drastically reduce DB space increase.
 
