@@ -3,16 +3,16 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
-## 1.4.6 Release
-This includes Scratch Trie optimization which should drastically reduce DB space increase.
+## 1.4.8 Release
+This includes Security updates for the network, prior to 1.5 release.
 
-For this upgrade to protocol version 1.4.6, the activation point is `Era 4968`, which will be approximately around:
+For this upgrade to protocol version 1.4.8, the activation point is `Era 6130`, which will be approximately around:
 
- * 2022-05-20 13:08 UTC   
- * 2022-05-20 06:08 PST   
- * 2022-05-20 09:08 EST
- * 2022-05-20 15:08 CET
- * 2022-05-20 21:08 HKT
+ * 2022-08-25 12:02 UTC
+ * 2022-08-25 05:02 PST
+ * 2022-08-25 08:02 EST
+ * 2022-08-25 14:02 CEST
+ * 2022-08-25 20:02 HKST
 
 # Upgrade Staging Instructions
 
@@ -20,11 +20,11 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 
 1. Before running the upgrade, view the script with this command (optional):
 
-    `curl -s genesis.casperlabs.io/casper/1_4_6/stage_upgrade.sh`
+    `curl -s genesis.casperlabs.io/casper/1_4_8/stage_upgrade.sh`
 
 2. Download and execute the upgrade:
 
-    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_6/stage_upgrade.sh | sudo bash -`
+    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_8/stage_upgrade.sh | sudo bash -`
 
 # Verifying Successful Staging
 
@@ -36,8 +36,9 @@ You should expect this output if properly staged, prior to upgrading:
 
     $ curl -s localhost:8888/status | jq .next_upgrade
     {
-      "activation_point": 4968,
-      "protocol_version": "1.4.6"
+      "activation_point": 6130,
+      "protocol_version": "1.4.8"
     }
+
 
 If you see `null` after waiting for a few minutes, then your upgrade staging was not executed successfully.
