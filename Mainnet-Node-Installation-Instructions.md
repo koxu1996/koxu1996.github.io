@@ -89,12 +89,14 @@ RPC: Ready
     Tasks: 12 (limit: 4915)
    CGroup: /system.slice/casper-node-launcher.service
            ├─ 2934 /usr/bin/casper-node-launcher
-           └─16842 /var/lib/casper/bin/1_4_5/casper-node validator /etc/casper/1_4_5/config.toml```
+           └─16842 /var/lib/casper/bin/1_4_5/casper-node validator /etc/casper/1_4_5/config.toml
 
-If your `casper-node-launcher status` for not show active (running) with an increasing time, you are either not running or restarting. 
+```
+
+If your `casper-node-launcher status` is not active (running) with increasing time, you are either not running or restarting. 
 
 ## Monitor your node once it is up.
 
-Get a monitoring tool in place.  The community has created a few tools such as:
+Get a monitoring tool in place.  The community has created a few tools, such as:
 - Status.py: https://github.com/RapidMark/casper-tools
 - Grafana: https://github.com/matsuro-hadouken/casper-tools
