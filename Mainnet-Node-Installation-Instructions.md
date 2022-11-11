@@ -43,7 +43,9 @@ sudo apt install -y casper-client casper-node-launcher jq
 
 ## Install all protocols 
 
-`sudo -u casper /etc/casper/node_util.py stage_protocols casper.conf`
+```
+sudo -u casper /etc/casper/node_util.py stage_protocols casper.conf
+```
 
 ## Validator Keys 
 
