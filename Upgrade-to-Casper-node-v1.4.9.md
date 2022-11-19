@@ -3,16 +3,16 @@ We are requesting that all Casper Mainnet participants stage the upgrade of thei
 
 DO NOT restart the node, only run the commands provided. The upgrade will automatically occur at the activation point.
 
-## 1.4.8 Release
+## 1.4.9 Release
 This includes Security updates for the network, prior to 1.5 release.
 
-For this upgrade to protocol version 1.4.8, the activation point is `Era 6130`, which will be approximately around:
+For this upgrade to protocol version 1.4.9, the activation point is `Era 7210`, which will be approximately around:
 
- * 2022-08-25 12:02 UTC
- * 2022-08-25 05:02 PST
- * 2022-08-25 08:02 EST
- * 2022-08-25 14:02 CEST
- * 2022-08-25 20:02 HKST
+ * 2022-11-23 14:42 UTC
+ * 2022-11-23 06:42 PST
+ * 2022-11-23 09:42 EST
+ * 2022-11-23 15:42 CEST
+ * 2022-11-23 22:42 HKST
 
 # Upgrade Staging Instructions
 
@@ -20,11 +20,11 @@ The process to upgrade your node is very straightforward. Log in to your node, a
 
 1. Before running the upgrade, view the script with this command (optional):
 
-    `curl -s genesis.casperlabs.io/casper/1_4_8/stage_upgrade.sh`
+    `curl -s genesis.casperlabs.io/casper/1_4_9/stage_upgrade.sh`
 
 2. Download and execute the upgrade:
 
-    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_8/stage_upgrade.sh | sudo bash -`
+    `cd ~; curl -sSf genesis.casperlabs.io/casper/1_4_9/stage_upgrade.sh | sudo bash -`
 
 # Verifying Successful Staging
 
@@ -36,8 +36,8 @@ You should expect this output if properly staged, prior to upgrading:
 
     $ curl -s localhost:8888/status | jq .next_upgrade
     {
-      "activation_point": 6130,
-      "protocol_version": "1.4.8"
+      "activation_point": 7210,
+      "protocol_version": "1.4.9"
     }
 
 
