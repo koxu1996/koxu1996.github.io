@@ -53,10 +53,10 @@ make build-client-contracts
 
 With your node in sync and ready to validate again, we need to activate your invalid bid.  We do that with the activate_bid.wasm contract.  This will be part of the normal contracts compile.
 
-Run the following transaction to re-activate your bid and re-join the network. You will require a balance of at least 3.7 CSPR for this contract.
+Run the following transaction to re-activate your bid and re-join the network. You will require a balance of at least 5 CSPR for this contract. (We are seeing some variability with this gas cost as of 1.4.9 and will dive into this and try to get better docs on this.)
 
 ```
-casper-client put-deploy --secret-key /etc/casper/validator_keys/secret_key.pem --chain-name casper --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/activate_bid.wasm" --payment-amount 3700000000 --session-arg "validator_public_key:public_key='$(cat /etc/casper/validator_keys/public_key_hex)'"
+casper-client put-deploy --secret-key /etc/casper/validator_keys/secret_key.pem --chain-name casper --session-path "$HOME/casper-node/target/wasm32-unknown-unknown/release/activate_bid.wasm" --payment-amount 5000000000 --session-arg "validator_public_key:public_key='$(cat /etc/casper/validator_keys/public_key_hex)'"
 ```
 
 Check that the deploy was successful with the `casper-client get-deploy <deploy_hash>` or by searching for the deploy_hash on [https://cspr.live/](https://cspr.live/).
